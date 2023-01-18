@@ -9,9 +9,9 @@
   <title>IH Characters</title>
 </head>
 <body>
-  <section class="container" id="allCharacters">
+  <section class="container" >
     <h1>Ironhack Characters API</h1>
-    <div class="characters-container">
+    <div class="characters-container" id="allCharacters">
       <div class="character-info">
         <div class="name">Character Name</div>
         <div class="id">Character Name</div>
@@ -31,7 +31,7 @@
       </div>
       <div class="operation delete">
         <label for="character-id-delete">Delete by ID: </label>
-        <input type="text" name="character-id-delete">
+        <input type="text" name="character-id-delete" id="character-id-delete">
         <button id="delete-one">Delete one</button>
       </div>
 
@@ -43,21 +43,21 @@
       <form id="new-character-form" class="character-form">
         <div class="field">
           <label for="name">Name: </label>
-          <input type="text" name="name">
+          <input type="text" name="name" id="newName">
         </div>
         <div class="field">
           <label for="occupation">Occupation: </label>
-          <input type="text" name="occupation">
+          <input type="text" name="occupation" id="newOccupation">
         </div>
         <div class="field">
           <label for="weapon">Weapon: </label>
-          <input type="text" name="weapon">
+          <input type="text" name="weapon" id="newWeapon">
         </div>
         <div class="field">
           <label for="cartoon">Is a Cartoon: </label>
-          <input name="cartoon" type="checkbox">
+          <input name="cartoon" type="checkbox" id="newCartoonBool">
         </div>
-        <button id="send-data">Create</button>
+        <button id="send-data" type="submit">Create</button>
       </form>
     </section>
     <section class="form-container">
@@ -83,7 +83,7 @@
           <label for="cartoon">Is a Cartoon: </label>
           <input name="cartoon" type="checkbox">
         </div>
-        <button id="send-data">Update</button>
+        <button id="send-data" type="submit">Update</button>
       </form>
     </section>
   </section>
